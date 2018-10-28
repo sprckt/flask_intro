@@ -1,0 +1,19 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - e-log</title>
+        {% else %}
+        <title>Just welcome to the - e-log</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>Welcome to the Flask e-log</h3>
+        <p>Hello <b>{{ user.username }}</b></p>
+        {% for post in posts %}
+        <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+            {% for t in post.tags %}
+                <li>    {{ t }}</li>
+            {% endfor %}
+        {% endfor %}
+    </body>
+</html>
