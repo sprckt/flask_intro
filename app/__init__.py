@@ -11,6 +11,7 @@ app.config.from_object(Config)
 # Initialise Flask extensions
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-loging = LoginManager(app)
+login = LoginManager(app)
+login.login_view = 'login'
 
 from app import routes, models
