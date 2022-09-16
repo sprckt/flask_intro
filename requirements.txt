@@ -32,7 +32,7 @@ jupyter-core==4.4.0
 jupyterlab==0.33.12
 jupyterlab-launcher==0.11.2
 kiwisolver==1.0.1
-Mako==1.0.7
+Mako==1.2.2
 MarkupSafe==1.0
 matplotlib==2.2.3
 mistune==0.8.3
